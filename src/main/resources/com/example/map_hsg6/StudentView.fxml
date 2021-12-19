@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="231.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map_hsg6.StudentController">
+   <left>
+      <AnchorPane prefHeight="451.0" prefWidth="231.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="EnrollementsCourseButton" layoutX="5.0" layoutY="49.0" mnemonicParsing="false" onAction="#EnrollementsCourseButtonOnAction" prefHeight="26.0" prefWidth="217.0" text="Show Students enrolled for a course" />
+            <Button fx:id="registerButton" layoutX="4.0" layoutY="10.0" mnemonicParsing="false" onAction="#registerButtonOnAction" text="Register" />
+            <TextField fx:id="idRegistrationField" layoutX="75.0" layoutY="10.0" promptText="Course Id" />
+            <TextField fx:id="EnrollmentsCourseIdField" layoutX="7.0" layoutY="82.0" prefHeight="26.0" prefWidth="218.0" promptText="Course Id" />
+            <Button fx:id="showCoursesButton" layoutX="5.0" layoutY="151.0" mnemonicParsing="false" onAction="#showCoursesButtonOnAction" prefHeight="26.0" prefWidth="222.0" text="Show Courses with Free Places" />
+            <TextArea fx:id="LogsTextArea" editable="false" layoutX="11.0" layoutY="190.0" prefHeight="202.0" prefWidth="210.0" promptText="Output will appear hear" />
+            <Button fx:id="newPageButton" layoutX="114.0" layoutY="399.0" mnemonicParsing="false" onAction="#newPageButtonOnAction" prefHeight="26.0" prefWidth="102.0" text="New Page" />
+            <Button fx:id="closeButton" layoutX="11.0" layoutY="399.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="26.0" prefWidth="95.0" text="Close" />
+            <Button fx:id="showCreditsButton" layoutX="5.0" layoutY="116.0" mnemonicParsing="false" onAction="#showCreditsButtonOnAction" prefHeight="26.0" prefWidth="217.0" text="Show Credits" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

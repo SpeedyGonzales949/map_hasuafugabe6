@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map_hsg6.LoginController">
+   <left>
+      <AnchorPane prefHeight="401.0" prefWidth="297.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="293.0" fitWidth="291.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/login.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="231.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="82.0" layoutX="83.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/lock.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginButton" layoutX="86.0" layoutY="186.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#loginButtonOnAction" text="Login">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+            <Button fx:id="singUpButton" layoutX="51.0" layoutY="332.0" mnemonicParsing="false" onAction="#signUpButtonOnAction" text="Sign Up">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorLabel" contentDisplay="CENTER" layoutX="12.0" layoutY="116.0" prefHeight="18.0" prefWidth="201.0" textFill="RED" />
+            <PasswordField fx:id="passwordField" layoutX="9.0" layoutY="145.0" prefHeight="26.0" prefWidth="206.0" promptText="Enter Id" />
+            <Label layoutX="9.0" layoutY="309.0" prefHeight="23.0" prefWidth="147.0" text="Don't have an account yet?" />
+         </children></AnchorPane>
+   </right>
+</BorderPane>
